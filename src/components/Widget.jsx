@@ -56,7 +56,7 @@ export const Widget = ({ projectId }) => {
       <div className="widget fixed bottom-4 right-4 z-50">
         <Popover>
           <PopoverTrigger asChild>
-            <Button className="rounded-full shadow-lg hover:scale-105">
+            <Button className="rounded-full shadow-lg hover:scale-105 hover:bg-neutral-700 bg-neutral-900">
               <MessageCircleIcon className="mr-2 h-5 w-5" />
               Feedback
             </Button>
@@ -98,16 +98,39 @@ export const Widget = ({ projectId }) => {
                         />
                       ))}
                     </div>
-                    <Button type="submit">Submit</Button>
+                    <Button className="bg-neutral-900" type="submit">
+                      Submit
+                    </Button>
                   </div>
                 </form>
               </div>
             )}
             <Separator className="my-4" />
-            <div className="text-gray-600">
+            <div className="text-gray-600 flex gap-4">
               Powered by{" "}
-              <a href="https://nexx-saas.vercel.app/" target="_blank" className="text-indigo-600 hover:underline" rel="noreferrer">
-                Nexx ⚡️
+              <a href="https://pheedbac.vercel.app/" target="_blank" className="text-neutral-800 underline flex gap-2" rel="noreferrer">
+                <svg xmlns="http://www.w3.org/2000/svg" data-name="Layer 2" viewBox="0 0 154.78 154.78" width={20} height={20}>
+                  <g data-name="Layer 1">
+                    <rect
+                      width={154.78}
+                      height={154.78}
+                      rx={33.47}
+                      ry={33.47}
+                      style={{
+                        fill: "#000",
+                        strokeWidth: 0,
+                      }}
+                    />
+                    <path
+                      d="m97.83 64.06-2.51 1.83-2.54 1.84c.87 2.07 1.34 4.34 1.34 6.72 0 9.64-7.85 17.49-17.49 17.49H26.68L22.48 95l-4.2 3.06h58.35c13.02 0 23.61-10.59 23.61-23.61 0-3.73-.87-7.25-2.41-10.39Zm-37.01 23.9 2.55-1.85 2.57-1.87c-.88-2.1-1.36-4.4-1.36-6.81 0-9.78 7.96-17.73 17.73-17.73h50.64l4.26-3.1 4.26-3.1H82.31c-13.2 0-23.93 10.73-23.93 23.93 0 3.78.88 7.35 2.45 10.53Z"
+                      style={{
+                        strokeWidth: 0,
+                        fill: "#fff",
+                      }}
+                    />
+                  </g>
+                </svg>
+                Pheedback
               </a>
             </div>
           </PopoverContent>
